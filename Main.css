@@ -1,4 +1,4 @@
-/* Base Styles */
+/* Algemene stijlen voor de basis van de website */
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +12,14 @@ body {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
+
 h1,
 h2,
 h3 {
-  font-family: "Bebas Neue", sans-serif; /* For headings */
-  letter-spacing: 0.05em; /* Optional for a more modern look */
+  font-family: "Bebas Neue", sans-serif; /* Gebruik Bebas Neue voor titels */
+  letter-spacing: 0.05em; /* Optioneel voor een modernere look */
 }
+
 .container {
   width: 100%;
   max-width: 75em;
@@ -28,7 +30,7 @@ h3 {
   justify-content: center;
 }
 
-/* Header Styles */
+/* Header Stijlen */
 header {
   background-color: #6d2f4d;
   padding: 2em 0;
@@ -41,18 +43,20 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo h1 {
   color: #e5e5e5;
   font-size: 2em;
-  padding: 0.5em 1em; /* Smaller padding to reduce the vertical size */
-  background-color: #ff5733; /* Retro, bold color */
-  border: 0.15em solid #c70039; /* Slightly thinner border to fit the space */
-  border-radius: 0; /* Square, retro look */
-  box-shadow: 0em 0.3em 0em 0em #900c3f, 0em 0.5em 0.75em rgba(0, 0, 0, 0.5); /* Lighter shadow for a raised effect */
-  margin: 0; /* Remove margin for alignment */
-  display: inline-block; /* Make sure it aligns within the nav */
-  line-height: 1; /* Ensures it aligns properly with other items */
+  padding: 0.5em 1em; /* Kleiner padding voor minder hoogte */
+  background-color: #ff5733; /* Retro, opvallende kleur */
+  border: 0.15em solid #c70039; /* Iets dunnere rand voor balans */
+  border-radius: 0; /* Vierkante retro-look */
+  box-shadow: 0em 0.3em 0em 0em #900c3f, 0em 0.5em 0.75em rgba(0, 0, 0, 0.5); /* Lichter schaduw-effect */
+  margin: 0;
+  display: inline-block;
+  line-height: 1;
 }
+
 .nav-links {
   list-style-type: none;
   display: flex;
@@ -61,22 +65,25 @@ nav {
 .nav-links li {
   margin-left: 1.2em;
 }
+
 .nav-links a {
   color: #fff;
   text-decoration: none;
   font-size: 1.3em;
   padding: 1em 2em;
-  background-color: #ff5733; /* Retro, bold color */
-  border: 0.3em solid #c70039; /* Strong border to give a pixelated effect */
-  border-radius: 0; /* Make it square, like an old game button */
-  box-shadow: 0em 0.5em 0em 0em #900c3f, 0em 0.75em 1em rgba(0, 0, 0, 0.5); /* Retro "raised" look */
-  font-family: "Press Start 2P", cursive; /* Retro pixel-style font */
+  background-color: #ff5733;
+  border: 0.3em solid #c70039; /* Dikke rand voor pixel-effect */
+  border-radius: 0; /* Vierkant, als een retro gameknop */
+  box-shadow: 0em 0.5em 0em 0em #900c3f, 0em 0.75em 1em rgba(0, 0, 0, 0.5); /* Retro "opgetild" effect */
+  font-family: "Press Start 2P", cursive; /* Retro pixel-stijl font */
 }
+
 .nav-links a:hover {
-  transform: translateY(0.25em); /* Simulate pressing the button */
-  background-color: #ff3333; /* Change color to give feedback on hover */
+  transform: translateY(0.25em); /* Simuleert indrukken van een knop */
+  background-color: #ad0a0a; /* Verandert kleur voor feedback */
 }
-/* Hero Section */
+
+/* Hero Sectie Stijlen */
 main {
   background: url("cratos.png");
   background-color: #3b0a22;
@@ -94,26 +101,45 @@ main h2 {
   margin-bottom: 0.2em;
   color: #e0e0e0;
   font-weight: bolder;
-  background-color: #4d6d2fab;
-  border-radius: 0.2em;
   text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.781);
 }
 
+/* Sectie voor referentie naar quote bron */
+.reference {
+  background-color: #4d6d2fab;
+  border-radius: 1em;
+  margin-bottom: 0em;
+}
+
+.reference h2 {
+  margin-bottom: 0em;
+}
+
+.reference p {
+  background-color: #6f835d;
+  margin-bottom: 1em;
+  font-size: 1.4em;
+  text-align: center;
+  margin-right: 2em;
+  margin: 0em 2em 0.5em 42em;
+  padding: 0em;
+}
+
 main p {
-  font-family: "Open Sans", sans-serif; /* Clean and readable */
-  font-size: 1.5em; /* Adjust size for clarity */
-  line-height: 1.6em; /* Make the lines breathe */
-  color: #f0f0f0; /* Ensure contrast with background */
+  font-family: "Open Sans", sans-serif; /* Clean en goed leesbaar */
+  font-size: 1.5em;
+  line-height: 1.6em; /* Genoeg ruimte tussen lijnen */
+  color: #f0f0f0;
   padding-bottom: 1em;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive; /* Retro stijl */
 }
 
 main a {
-  background-color: #ff5733; /* Retro, bold color */
-  border: 0.25em solid #c70039; /* Strong border to give a pixelated effect */
-  border-radius: 0; /* Make it square, like an old game button */
-  box-shadow: 0em 0.3em 0em 0em #900c3f, 0em 0.75em 1em rgba(0, 0, 0, 0.5); /* Retro "raised" look */
-  font-family: "Press Start 2P", cursive; /* Retro pixel-style font */
+  background-color: #ff5733;
+  border: 0.25em solid #c70039; /* Dikke pixelachtige rand */
+  border-radius: 0; /* Vierkant voor retro gevoel */
+  box-shadow: 0em 0.3em 0em 0em #900c3f, 0em 0.75em 1em rgba(0, 0, 0, 0.5);
+  font-family: "Press Start 2P", cursive;
   padding: 0.6em 1.2em;
   text-decoration: none;
   font-size: 4em;
@@ -126,7 +152,8 @@ main a {
 main .btn:hover {
   background-color: #eb4040;
 }
-/* Footer */
+
+/* Footer Stijlen */
 footer {
   padding: 1.5em 0;
   text-align: center;
@@ -161,6 +188,8 @@ footer p {
 .social-links a:hover {
   background-color: #ff0000;
 }
+
+/* Lijst met afleveringen */
 .episodes-list {
   padding: 1em;
   list-style-type: none;
@@ -170,40 +199,47 @@ footer p {
   justify-content: space-evenly;
   gap: 0.3em;
 }
+
 .episodes-list li {
   background-color: #f7dc6f;
-  padding: 3em 5em 3em 5em;
+  padding: 3em 5em;
   font-weight: bold;
   border-radius: 0.5em;
   flex-basis: 33%;
   text-align: center;
 }
+
 main ul {
   margin: 0;
 }
+
 article h1 {
   font-size: 20em;
   text-align: center;
-  margin: em;
   text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.397);
 }
+
 figure {
   display: flex;
   justify-content: center;
   gap: 3em;
 }
+
 article img {
   width: 25%;
   background-color: #4d6d2f;
   padding: 1em;
   border-radius: 0.3em;
 }
+
 iframe {
   background-color: #4d6d2f;
   border-radius: 0.3em;
   margin: 4em 0em 0em 0em;
   padding: 0;
 }
+
+/* Artikel sectie met achtergrond afbeelding */
 article {
   background: url("cratos.png");
   background-color: #66113a;
@@ -213,13 +249,14 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0em 0em 0em 0em;
+  margin: 0;
 }
+
 article p {
-  font-family: "Open Sans", sans-serif; /* Clean and readable */
-  font-size: 1.5em; /* Adjust size for clarity */
-  line-height: 1.6em; /* Make the lines breathe */
-  color: #f0f0f0; /* Ensure contrast with background */
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  color: #f0f0f0;
   padding-bottom: 1em;
   margin: 6em 4em 1em 4em;
   background-color: #4d6d2f;
@@ -227,6 +264,8 @@ article p {
   border-radius: 1em;
   font-family: "Press Start 2P", cursive;
 }
+
+/* Episode Picker */
 .episode-picker {
   background-color: #1a1f36;
   color: #ffffff;
@@ -241,6 +280,7 @@ article p {
   font-family: "Bebas Neue", sans-serif;
   text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.7);
 }
+
 .episode-flex {
   gap: 2em;
   padding: 1em;
@@ -248,12 +288,12 @@ article p {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .episode-card {
   background-color: #3b0a22;
   border-radius: 1em;
-  padding: 5em 0.5em 5em 0.5em;
+  padding: 5em 0.5em;
   width: 30%;
-  height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -278,6 +318,44 @@ article p {
   transform: translateY(-10px);
   box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.5);
 }
-footer .container {
-  gap: 1.5em;
+
+/* Wiggle animatie voor knoppen */
+.btn {
+  animation: wiggle 0.6s ease-in-out infinite;
+  animation-delay: 5s; /* Zorgt ervoor dat het niet meteen afgaat */
+}
+
+/* Keyframe animatie voor schaalvergroting */
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+figure img:hover {
+  animation: scaleUp 0.5s forwards;
+}
+
+/* Wave animatie voor knoppen */
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-0.3em);
+  }
+  50% {
+    transform: translateY(0.3em);
+  }
+  75% {
+    transform: translateY(-0.3em);
+  }
+}
+
+.btn {
+  animation: wave 2s ease-in-out infinite;
 }
