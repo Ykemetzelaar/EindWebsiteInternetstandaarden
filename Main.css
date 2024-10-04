@@ -1,0 +1,283 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1a1f36;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif; /* For headings */
+  letter-spacing: 0.05em; /* Optional for a more modern look */
+}
+.container {
+  width: 100%;
+  max-width: 75em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+}
+
+/* Header Styles */
+header {
+  background-color: #6d2f4d;
+  padding: 2em 0;
+}
+
+nav {
+  max-width: 75em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  color: #e5e5e5;
+  font-size: 2em;
+  padding: 0.5em 1em; /* Smaller padding to reduce the vertical size */
+  background-color: #ff5733; /* Retro, bold color */
+  border: 0.15em solid #c70039; /* Slightly thinner border to fit the space */
+  border-radius: 0; /* Square, retro look */
+  box-shadow: 0em 0.3em 0em 0em #900c3f, 0em 0.5em 0.75em rgba(0, 0, 0, 0.5); /* Lighter shadow for a raised effect */
+  margin: 0; /* Remove margin for alignment */
+  display: inline-block; /* Make sure it aligns within the nav */
+  line-height: 1; /* Ensures it aligns properly with other items */
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.2em;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 1em 2em;
+  background-color: #ff5733; /* Retro, bold color */
+  border: 0.3em solid #c70039; /* Strong border to give a pixelated effect */
+  border-radius: 0; /* Make it square, like an old game button */
+  box-shadow: 0em 0.5em 0em 0em #900c3f, 0em 0.75em 1em rgba(0, 0, 0, 0.5); /* Retro "raised" look */
+  font-family: "Press Start 2P", cursive; /* Retro pixel-style font */
+}
+.nav-links a:hover {
+  transform: translateY(0.25em); /* Simulate pressing the button */
+  background-color: #ff3333; /* Change color to give feedback on hover */
+}
+/* Hero Section */
+main {
+  background: url("cratos.png");
+  background-color: #3b0a22;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 68.3vw;
+  color: #fff;
+  text-align: center;
+  padding: 12em 0em 12em 0em;
+}
+
+main h2 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+  color: #e0e0e0;
+  font-weight: bolder;
+  background-color: #4d6d2fab;
+  border-radius: 0.2em;
+  text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.781);
+}
+
+main p {
+  font-family: "Open Sans", sans-serif; /* Clean and readable */
+  font-size: 1.5em; /* Adjust size for clarity */
+  line-height: 1.6em; /* Make the lines breathe */
+  color: #f0f0f0; /* Ensure contrast with background */
+  padding-bottom: 1em;
+  font-family: "Press Start 2P", cursive;
+}
+
+main a {
+  background-color: #ff5733; /* Retro, bold color */
+  border: 0.25em solid #c70039; /* Strong border to give a pixelated effect */
+  border-radius: 0; /* Make it square, like an old game button */
+  box-shadow: 0em 0.3em 0em 0em #900c3f, 0em 0.75em 1em rgba(0, 0, 0, 0.5); /* Retro "raised" look */
+  font-family: "Press Start 2P", cursive; /* Retro pixel-style font */
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  font-size: 4em;
+  border-radius: 0.3em;
+  transition: background-color 0.3s;
+  margin: 1.2em 2em 2em 2em;
+  color: #e5e5e5;
+}
+
+main .btn:hover {
+  background-color: #eb4040;
+}
+/* Footer */
+footer {
+  padding: 1.5em 0;
+  text-align: center;
+  background-color: #66113a;
+}
+
+footer p {
+  margin-bottom: 0.6em;
+  font-family: "Press Start 2P", cursive;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.social-links li {
+  margin: 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+
+.social-links a:hover {
+  background-color: #ff0000;
+}
+.episodes-list {
+  padding: 1em;
+  list-style-type: none;
+  border-radius: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.3em;
+}
+.episodes-list li {
+  background-color: #f7dc6f;
+  padding: 3em 5em 3em 5em;
+  font-weight: bold;
+  border-radius: 0.5em;
+  flex-basis: 33%;
+  text-align: center;
+}
+main ul {
+  margin: 0;
+}
+article h1 {
+  font-size: 20em;
+  text-align: center;
+  margin: em;
+  text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.397);
+}
+figure {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+article img {
+  width: 25%;
+  background-color: #4d6d2f;
+  padding: 1em;
+  border-radius: 0.3em;
+}
+iframe {
+  background-color: #4d6d2f;
+  border-radius: 0.3em;
+  margin: 4em 0em 0em 0em;
+  padding: 0;
+}
+article {
+  background: url("cratos.png");
+  background-color: #66113a;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em 0em 0em 0em;
+}
+article p {
+  font-family: "Open Sans", sans-serif; /* Clean and readable */
+  font-size: 1.5em; /* Adjust size for clarity */
+  line-height: 1.6em; /* Make the lines breathe */
+  color: #f0f0f0; /* Ensure contrast with background */
+  padding-bottom: 1em;
+  margin: 6em 4em 1em 4em;
+  background-color: #4d6d2f;
+  padding: 1em;
+  border-radius: 1em;
+  font-family: "Press Start 2P", cursive;
+}
+.episode-picker {
+  background-color: #1a1f36;
+  color: #ffffff;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.episode-picker h2 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+  color: #ffc107;
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.7);
+}
+.episode-flex {
+  gap: 2em;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.episode-card {
+  background-color: #3b0a22;
+  border-radius: 1em;
+  padding: 5em 0.5em 5em 0.5em;
+  width: 30%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.episode-card h3 {
+  font-size: 3em;
+  color: #f7dc6f;
+  margin-bottom: 0.5em;
+  line-height: 0.9em;
+  overflow-wrap: break-word;
+}
+
+.episode-card p {
+  font-size: 1.5em;
+  color: #e5e5e5;
+  font-family: "Press Start 2P", cursive;
+  margin: 2em 2em 0em 2em;
+}
+
+.episode-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.5);
+}
+footer .container {
+  gap: 1.5em;
+}
